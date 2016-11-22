@@ -24,17 +24,29 @@ public class Customer {
 		myMoney -= amountToPay;
 	}
 	/* END GETTERS AND SETTERS */
-	
+	/**
+	 * Constructor for customer
+	 * @param country Country of origin
+	 * @param money Money the customer starts with
+	 */
 	public Customer(String country, double money){
 		myCountry = country;
 		myMoney = money;
 		myCart = new Cart();
 	}
 	
+	/**
+	 * Adds item to customers cart
+	 * @param addedProd The product to add
+	 */
 	public void addToCart(Product addedProd){
 		myCart.addItem(addedProd);
 	}
 	
+	/**
+	 * The checkout with a clerk. If true, adds products to customers bag.
+	 * @return True if transaction successful, false otherwise
+	 */
 	public boolean checkOut(){
 		Clerk clerk = new Clerk();
 		if(clerk.checkCustCart(this)){

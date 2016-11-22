@@ -27,7 +27,10 @@ class BlinkyLollipop extends Product implements Lollipop{
 		this.setDescription("A delicious lollipop that will taste just like Blinky!");
 		this.setCost(3.00);
 	}
-	
+	/**
+	 * returns flavor of lollipop
+	 * @ return Lollipop flavor
+	 */
 	public String getFlavor(){
 		return flavour;
 	}

@@ -1,7 +1,7 @@
 /**
  * The abstract factory for all the Products.
  * 
- * @author Lustin
+ * @author Patrick Coyle and Blake Lawrence
  *
  */
 public class AbstractFactory{

@@ -10,10 +10,10 @@ public abstract class Product{
 	private String desc;
 	private Double cost;
 	
+	/* GETTERS AND SETTERS */
 	public String getName(){
 		return name;
 	}
-	
 	public String getDescription(){
 		return desc;
 	}
@@ -33,4 +33,5 @@ public abstract class Product{
 	public void setCost(double cost){
 		this.cost = cost;
 	}
+	/* END GETTERS AND SETTERS */
 }
