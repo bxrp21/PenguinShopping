@@ -27,6 +27,7 @@ public class Customer {
 	
 	public Customer(String country, double money){
 		myCountry = country;
+		myMoney = money;
 		myCart = new Cart();
 	}
 	

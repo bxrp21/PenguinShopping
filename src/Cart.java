@@ -9,6 +9,7 @@ public class Cart {
 		total = total + p.cost;
 	}
 	public void remove(Product p){
+		products.remove(p);
 		total = total - p.cost;
 	}
 	public double getTotal(){
