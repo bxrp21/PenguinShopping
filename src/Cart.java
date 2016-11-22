@@ -6,10 +6,10 @@ public class Cart {
 
 	public void addItem(Product p){
 		products.add(p);
-		total = total + p.cost;
+		total = total + p.getCost();
 	}
 	public void remove(Product p){
-		total = total - p.cost;
+		total = total - p.getCost();
 	}
 	public double getTotal(){
 		return total;

@@ -5,7 +5,7 @@ public interface Lollipop{
 
 class NemoLollipop extends Product implements Lollipop{
 	
-	String flavour = "Nemo";
+	private String flavour = "Nemo";
 	
 	public NemoLollipop(){
 		this.setName("Nemo Fish Lollipop");
@@ -20,7 +20,7 @@ class NemoLollipop extends Product implements Lollipop{
 }
 
 class BlinkyLollipop extends Product implements Lollipop{
-	String flavour = "Blinky";
+	private String flavour = "Blinky";
 	
 	public BlinkyLollipop(){
 		this.setName("Blinky Fish Lollipop");
@@ -34,7 +34,7 @@ class BlinkyLollipop extends Product implements Lollipop{
 }
 
 class CleoLollipop extends Product implements Lollipop{
-	String flavour = "Cleo";
+	private String flavour = "Cleo";
 	
 	public CleoLollipop(){
 		this.setName("Cleo Fish Lollipop");
