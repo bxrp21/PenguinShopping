@@ -10,7 +10,7 @@ public class LollipopFactory extends AbstractFactory{
 	
 	private static LollipopFactory lolFact;
 	
-	protected LollipopFactory(){
+	private LollipopFactory(){
 		//to prevent instantiation
 	}
 	
@@ -21,15 +21,15 @@ public class LollipopFactory extends AbstractFactory{
 		return lolFact;
 	}
 	
-	public static Lollipop NemoLollipop(){
+	public Lollipop NemoLollipop(){
 		return new NemoLollipop();
 	}
 	
-	public static Lollipop BlinkyLollipop(){
+	public Lollipop BlinkyLollipop(){
 		return new BlinkyLollipop();
 	}
 	
-	public static Lollipop CleoLollipop(){
+	public Lollipop CleoLollipop(){
 		return new CleoLollipop();
 	}
 }

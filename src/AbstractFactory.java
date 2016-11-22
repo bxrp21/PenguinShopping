@@ -17,4 +17,6 @@ public class AbstractFactory{
 		String error = "Illegal Product!";
 		throw new IllegalArgumentException(error);
 	}
+	
+	
 }

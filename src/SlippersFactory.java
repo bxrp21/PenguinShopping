@@ -10,7 +10,7 @@ public class SlippersFactory extends AbstractFactory {
 	
 	private static SlippersFactory slipFact;
 	
-	protected SlippersFactory(){
+	private SlippersFactory(){
 		//to prevent instantiation
 	}
 	
@@ -21,11 +21,11 @@ public class SlippersFactory extends AbstractFactory {
 		return slipFact;
 	}
 	
-	public static MusicSlippers getBoogieSlippers(){
+	public MusicSlippers getBoogieSlippers(){
 		return new BoogieSlippers();
 	}
 	
-	public static MusicSlippers getLoveSlippers(){
+	public MusicSlippers getLoveSlippers(){
 		return new LoveSlippers();
 	}
 }
