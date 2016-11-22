@@ -10,16 +10,19 @@ public class CartTest{
 		TestProduct t2 = new TestProduct("Test#2","test product #2",2.75);
 		TestProduct t3 = new TestProduct("Test#3","test product #3",10.00);
 		ArrayList<Product> t = new ArrayList<Product>();
+		//Testing if adding objects adds to the total
 		c.addItem(t1);
 		assertEquals(c.getTotal(),t1.getCost(),0.001);
 		c.addItem(t2);
 		c.addItem(t3);
 		assertEquals(c.getTotal(),t1.getCost()+t2.getCost()+t3.getCost(),0.001);
+		//Testing if removing objects removes from the total
 		c.remove(t3);
 		assertEquals(c.getTotal(),t1.getCost()+t2.getCost(),0.001);
 		c.remove(t2);
 		c.remove(t1);
 		assertEquals(c.getTotal(),0.0,0.001);
+		//testing if adding objects to the carts works correctly
 		assertEquals(c.getCartContents(),new ArrayList<Product>());
 		c.addItem(t1);
 		c.addItem(t2);
