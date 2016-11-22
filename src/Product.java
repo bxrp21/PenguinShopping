@@ -1,3 +1,10 @@
+/**
+ * Abstract class to represent a "product".
+ * 
+ * @author Lustin
+ *
+ */
+
 public abstract class Product{
 	String name;
 	String desc;
@@ -6,7 +13,6 @@ public abstract class Product{
 	public String getName(){
 		return name;
 	}
-	
 	
 	public String getDescription(){
 		return desc;

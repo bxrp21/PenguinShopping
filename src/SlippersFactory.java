@@ -1,4 +1,11 @@
 
+/**
+ * Singleton, factory Class for Slippers
+ * 
+ * @author Patrick Coyle
+ *
+ */
+
 public class SlippersFactory extends AbstractFactory {
 	
 	private static SlippersFactory slipFact;

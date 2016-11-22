@@ -1,8 +1,12 @@
-
+/**
+ * The abstract factory for all the Products.
+ * 
+ * @author Lustin
+ *
+ */
 public class AbstractFactory{
 	
-	static final AbstractFactory getProductFactory(String productType){
-		
+	static final AbstractFactory getProductFactory(String productType){	
 		switch (productType)
 		{
 		case "Lollipop":
@@ -13,6 +17,4 @@ public class AbstractFactory{
 		String error = "Illegal Product!";
 		throw new IllegalArgumentException(error);
 	}
-	
-	
 }

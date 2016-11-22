@@ -1,4 +1,10 @@
 
+/**
+ * Singleton Factory class for Lollipops
+ * 
+ * @author Patrick Coyle
+ *
+ */
 
 public class LollipopFactory extends AbstractFactory{
 	
