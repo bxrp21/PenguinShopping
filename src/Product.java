@@ -6,9 +6,9 @@
  */
 
 public abstract class Product{
-	String name;
-	String desc;
-	Double cost;
+	private String name;
+	private String desc;
+	private Double cost;
 	
 	public String getName(){
 		return name;
